@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CircuitControlPage.qml</file>
+        <file>CircuitListPage.qml</file>
+        <file>longbeep.wav</file>
+        <file>shortbeep.wav</file>
+    </qresource>
+</RCC>
