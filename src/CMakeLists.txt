@@ -24,3 +24,5 @@ qt5_add_resources(exec_SRCS
 )
 add_executable(kairo ${exec_SRCS})
 target_link_libraries(kairo kairolib)
+
+install(TARGETS kairo DESTINATION ${KDE_INSTALL_BINDIR})
