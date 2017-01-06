@@ -22,7 +22,10 @@ set(exec_SRCS
 qt5_add_resources(exec_SRCS
     main.qrc
 )
+
+include_directories(${CMAKE_SOURCE_DIR}/3rdparty/kirigami/src)
+
 add_executable(kairo ${exec_SRCS})
-target_link_libraries(kairo kairolib)
+target_link_libraries(kairo kairolib kirigamiplugin)
 
 install(TARGETS kairo DESTINATION ${KDE_INSTALL_BINDIR})

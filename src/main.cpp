@@ -22,7 +22,9 @@
 */
 
 #include <QGuiApplication>
-#include <QQuickView>
+#include <QQmlApplicationEngine>
+
+#include "kirigamiplugin.h"
 
 #include "circuitcontrol.h"
 #include "circuitlistmodel.h"
@@ -37,6 +39,9 @@ int main(int argc, char **argv)
     QGuiApplication app(argc, argv);
     app.setApplicationName("Kairo");
 
+    Q_INIT_RESOURCE(kirigami);
+    KirigamiPlugin::registerTypes();
+
     qmlRegisterType<CircuitListModel>("Kairo", 1, 0, "CircuitListModel");
     qmlRegisterUncreatableType<CircuitModel>("Kairo", 1, 0, "CircuitModel", "Loaded from C++");
     qmlRegisterType<CircuitControl>("Kairo", 1, 0, "CircuitControl");
@@ -46,10 +51,8 @@ int main(int argc, char **argv)
     qmlRegisterUncreatableType<SoundControlInterface>("Kairo", 1, 0, "SoundControlInterface", "Use SoundControl");
     qmlRegisterType<SoundControl>("Kairo", 1, 0, "SoundControl");
 
-    QQuickView view;
-    view.setResizeMode(QQuickView::SizeRootObjectToView);
-    view.setSource(QUrl("qrc:/main.qml"));
-    view.show();
+    QQmlApplicationEngine engine;
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     return app.exec();
 }

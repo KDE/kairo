@@ -24,9 +24,14 @@
 import QtQuick 2.0
 import Kairo 1.0
 
-Item {
+import org.kde.kirigami 2.0 as Kirigami
+
+
+Kirigami.ApplicationWindow {
     id: root
-    width: 400; height: width
+    visible: true
+    width: 640
+    height: 480
 
     property bool displayListPage: true
 

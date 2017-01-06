@@ -1,0 +1,3 @@
+[submodule "3rdparty/kirigami"]
+	path = 3rdparty/kirigami
+	url = git://anongit.kde.org/kirigami.git
