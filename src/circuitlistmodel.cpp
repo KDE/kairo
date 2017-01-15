@@ -92,7 +92,7 @@ CircuitModel CircuitListModel::loadCircuit(int index)
     }
 
     const auto path = m_circuits.at(index).filePath;
-    auto file = std::make_unique<QFile>(path);
+    auto file = std::unique_ptr<QFile>(new QFile(path));
     auto reader = CircuitReader{file.get()};
     return reader.readCircuit();
 }
@@ -110,7 +110,7 @@ void CircuitListModel::onDirectoryContentChanged()
                    std::back_inserter(circuits),
                    [] (const QFileInfo &entry) {
                        const auto path = entry.absoluteFilePath();
-                       auto file = std::make_unique<QFile>(path);
+                       auto file = std::unique_ptr<QFile>(new QFile(path));
                        auto reader = CircuitReader{file.get()};
                        const auto metaData = reader.readMetaData();
                        return CircuitFile{path, metaData.value("name").toString()};
