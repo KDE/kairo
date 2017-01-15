@@ -31,6 +31,10 @@
 
 #include "circuitreader.h"
 
+#ifdef Q_OS_ANDROID
+#include <QStorageInfo>
+#endif
+
 CircuitListModel::CircuitListModel(QObject *parent)
     : QAbstractListModel{parent},
       m_watcher{new QFileSystemWatcher{this}}
@@ -99,7 +103,25 @@ CircuitModel CircuitListModel::loadCircuit(int index)
 
 QString CircuitListModel::path() const
 {
+#ifndef Q_OS_ANDROID
     return QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation);
+#else
+    auto volumes = QStorageInfo::mountedVolumes();
+    auto paths = QStringList();
+    paths.reserve(volumes.size());
+    std::transform(volumes.constBegin(), volumes.constEnd(),
+                   std::back_inserter(paths),
+                   [] (const QStorageInfo &volume) {
+                       return volume.rootPath();
+                   });
+    auto validPaths = QStringList();
+    std::copy_if(paths.constBegin(), paths.constEnd(),
+                 std::back_inserter(validPaths),
+                 [] (const QString &path) {
+                     return path.startsWith("/storage/") && !path.startsWith("/storage/emulated");
+                 });
+    return validPaths.first() + "/Android/Kairo";
+#endif
 }
 
 void CircuitListModel::onDirectoryContentChanged()
