@@ -22,11 +22,16 @@
 */
 
 import QtQuick 2.0
+import org.kde.kirigami 2.0 as Kirigami
 import Kairo 1.0
 
-Rectangle {
+Kirigami.ScrollablePage {
     id: root
-    color: "lightBlue"
+
+    title: "Available Circuits"
+    background: Rectangle {
+        color: Kirigami.Theme.viewBackgroundColor
+    }
 
     signal circuitSelected(var circuit)
 
@@ -38,7 +43,7 @@ Rectangle {
         anchors.centerIn: parent
         width: parent.width - 32
         visible: listView.count === 0
-        font.pixelSize: 22
+        font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 2
         wrapMode: Text.Wrap
         text: "Place some circuit files in " + listModel.path
     }
@@ -47,24 +52,10 @@ Rectangle {
         id: listView
         anchors.fill: parent
         model: listModel
-        delegate: Rectangle {
-            color: Qt.rgba(0.2, 0.2, 0.2, 0.4)
-            border.color: "black"
-            width: parent.width
-            height: 48
-
-            Text {
-                anchors.left: parent.left
-                anchors.leftMargin: 16
-                anchors.verticalCenter: parent.verticalCenter
-                font.pixelSize: 22
-                text: model.display
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: root.circuitSelected(listModel.loadCircuit(model.index))
-            }
+        delegate: Kirigami.BasicListItem {
+            reserveSpaceForIcon: false
+            label: model.display
+            onClicked: root.circuitSelected(listModel.loadCircuit(model.index))
         }
     }
 }
