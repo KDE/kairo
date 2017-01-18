@@ -22,12 +22,13 @@
 */
 
 import QtQuick 2.0
+import org.kde.kirigami 2.0 as Kirigami
 import Kairo 1.0
 
-Rectangle {
+Kirigami.Page {
     id: root
-    color: "darkRed"
 
+    title: model.name
     property alias model: circuitControl.model
     signal circuitFinished()
 
@@ -60,7 +61,7 @@ Rectangle {
         property bool isInt: seconds === Math.round(seconds)
 
         anchors.centerIn: parent
-        font.pixelSize: 20
+        font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 4
         text: timer.text + "\n" + seconds + (isInt ? ".0" : "")
     }
 
