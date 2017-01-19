@@ -33,36 +33,34 @@ Kirigami.ApplicationWindow {
     width: 640
     height: 480
 
-    property bool displayListPage: true
+    header: Kirigami.ApplicationHeader {}
 
-    CircuitListPage {
-        id: list
-        width: parent.width
-        height: parent.height
-        anchors.top: parent.top
+    pageStack.initialPage: listComponent
 
-        x: root.displayListPage ? 0 : -width
-
-        onCircuitSelected: {
-            displayListPage = false
-            control.model = circuit
+    Connections {
+        target: pageStack.contentItem
+        onContentXChanged: {
+            if (pageStack.depth > 1 && pageStack.contentItem.contentX === 0)
+                pageStack.pop()
         }
+    }
 
-        Behavior on x {
-            SequentialAnimation {
-                NumberAnimation { duration: 200 }
-                ScriptAction { script: control.start() }
+    Component {
+        id: listComponent
+        CircuitListPage {
+            onCircuitSelected: {
+                var page = controlComponent.createObject(root)
+                page.model = circuit
+                root.pageStack.push(page)
+                page.start()
             }
         }
     }
 
-    CircuitControlPage {
-        id: control
-        width: parent.width
-        height: parent.height
-        anchors.top: parent.top
-        anchors.left: list.right
-
-        onCircuitFinished: root.displayListPage = true
+    Component {
+        id: controlComponent
+        CircuitControlPage {
+            onCircuitFinished: root.pageStack.currentIndex = 0
+        }
     }
 }
