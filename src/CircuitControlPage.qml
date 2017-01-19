@@ -37,6 +37,11 @@ Kirigami.Page {
         timer.running = true
     }
 
+    actions.main: Kirigami.Action {
+        iconName: "go-next"
+        onTriggered: circuitControl.nextTimer()
+    }
+
     TimerNotificationControl {
         sound: SoundControl {
             id: sound
@@ -63,17 +68,5 @@ Kirigami.Page {
         anchors.centerIn: parent
         font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 4
         text: timer.text + "\n" + seconds + (isInt ? ".0" : "")
-    }
-
-    Text {
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: parent.top
-        font.pixelSize: 20
-        text: "NEXT"
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: circuitControl.nextTimer()
-        }
     }
 }
