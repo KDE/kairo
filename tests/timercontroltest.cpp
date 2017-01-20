@@ -41,6 +41,7 @@ private slots:
         QCOMPARE(control->model(), TimerModel{});
         QCOMPARE(control->text(), QString());
         QCOMPARE(control->value(), 0);
+        QCOMPARE(control->duration(), -1);
         QCOMPARE(control->isRunning(), false);
     }
 
@@ -49,10 +50,11 @@ private slots:
         QTest::addColumn<TimerModel>("model");
         QTest::addColumn<QString>("expectedText");
         QTest::addColumn<int>("expectedValue");
+        QTest::addColumn<int>("expectedDuration");
 
-        QTest::newRow("invalid") << TimerModel{} << QString() << 0;
-        QTest::newRow("countdown") << TimerModel{"foo", 10000} << "foo" << 10000;
-        QTest::newRow("stopwatch") << TimerModel{"bar"} << "bar" << 0;
+        QTest::newRow("invalid") << TimerModel{} << QString() << 0 << -1;
+        QTest::newRow("countdown") << TimerModel{"foo", 10000} << "foo" << 10000 << 10000;
+        QTest::newRow("stopwatch") << TimerModel{"bar"} << "bar" << 0 << 0;
     }
 
     void shouldDeriveValuesFromModel()
@@ -62,10 +64,12 @@ private slots:
         auto modelSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::modelChanged);
         auto textSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::textChanged);
         auto valueSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::valueChanged);
+        auto durationSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::durationChanged);
 
         QFETCH(TimerModel, model);
         QFETCH(QString, expectedText);
         QFETCH(int, expectedValue);
+        QFETCH(int, expectedDuration);
 
         // WHEN
         control->setModel(model);
@@ -74,6 +78,7 @@ private slots:
         QCOMPARE(control->model(), model);
         QCOMPARE(control->text(), expectedText);
         QCOMPARE(control->value(), expectedValue);
+        QCOMPARE(control->duration(), expectedDuration);
 
         if (model.isValid()) {
             QCOMPARE(modelSpy->size(), 1);
@@ -81,6 +86,13 @@ private slots:
 
             QCOMPARE(textSpy->size(), 1);
             QCOMPARE(textSpy->takeFirst().first().toString(), expectedText);
+
+            if (model.duration() >= 0) {
+                QCOMPARE(durationSpy->size(), 1);
+                QCOMPARE(durationSpy->takeFirst().first().toInt(), expectedDuration);
+            } else {
+                QCOMPARE(durationSpy->size(), 0);
+            }
 
             if (model.duration() != 0) {
                 QCOMPARE(valueSpy->size(), 1);
@@ -91,6 +103,7 @@ private slots:
         } else {
             QCOMPARE(textSpy->size(), 0);
             QCOMPARE(valueSpy->size(), 0);
+            QCOMPARE(durationSpy->size(), 0);
         }
 
         // WHEN
@@ -99,6 +112,7 @@ private slots:
         // THEN
         QCOMPARE(textSpy->size(), 0);
         QCOMPARE(valueSpy->size(), 0);
+        QCOMPARE(durationSpy->size(), 0);
     }
 
     void shouldDeriveValuesFromMovedModel_data()
@@ -112,10 +126,12 @@ private slots:
         auto control = std::make_unique<TimerControl>();
         auto textSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::textChanged);
         auto valueSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::valueChanged);
+        auto durationSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::durationChanged);
 
         QFETCH(TimerModel, model);
         QFETCH(QString, expectedText);
         QFETCH(int, expectedValue);
+        QFETCH(int, expectedDuration);
 
         // WHEN
         auto copy = model;
@@ -125,10 +141,18 @@ private slots:
         QCOMPARE(control->model(), model);
         QCOMPARE(control->text(), expectedText);
         QCOMPARE(control->value(), expectedValue);
+        QCOMPARE(control->duration(), expectedDuration);
 
         if (model.isValid()) {
             QCOMPARE(textSpy->size(), 1);
             QCOMPARE(textSpy->takeFirst().first().toString(), expectedText);
+
+            if (model.duration() >= 0) {
+                QCOMPARE(durationSpy->size(), 1);
+                QCOMPARE(durationSpy->takeFirst().first().toInt(), expectedDuration);
+            } else {
+                QCOMPARE(durationSpy->size(), 0);
+            }
 
             if (model.duration() != 0) {
                 QCOMPARE(valueSpy->size(), 1);
@@ -147,6 +171,7 @@ private slots:
         // THEN
         QCOMPARE(textSpy->size(), 0);
         QCOMPARE(valueSpy->size(), 0);
+        QCOMPARE(durationSpy->size(), 0);
     }
 
     void shouldDoNothingWhileRunningInvalid()
@@ -155,6 +180,7 @@ private slots:
         auto control = std::make_unique<TimerControl>();
         auto textSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::textChanged);
         auto valueSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::valueChanged);
+        auto durationSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::durationChanged);
         auto runningSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::runningChanged);
         auto finishedSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::timerFinished);
         control->setModel(TimerModel{});
@@ -167,6 +193,7 @@ private slots:
         QCOMPARE(control->isRunning(), true);
         QCOMPARE(textSpy->size(), 0);
         QCOMPARE(valueSpy->size(), 0);
+        QCOMPARE(durationSpy->size(), 0);
         QCOMPARE(runningSpy->size(), 1);
         QCOMPARE(runningSpy->takeFirst().first().toBool(), true);
         QCOMPARE(finishedSpy->size(), 1);
@@ -178,12 +205,14 @@ private slots:
         auto control = std::make_unique<TimerControl>();
         auto textSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::textChanged);
         auto valueSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::valueChanged);
+        auto durationSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::durationChanged);
         auto runningSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::runningChanged);
         auto finishedSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::timerFinished);
 
         control->setModel(TimerModel{"rest", 100});
         textSpy->clear();
         valueSpy->clear();
+        durationSpy->clear();
 
         // WHEN
         control->setRunning(true);
@@ -192,6 +221,7 @@ private slots:
         // THEN
         QCOMPARE(control->isRunning(), true);
         QCOMPARE(textSpy->size(), 0);
+        QCOMPARE(durationSpy->size(), 0);
         QCOMPARE(valueSpy->size(), 10);
         for (int value = 100; value != 0; value -= 10) {
             QCOMPARE(valueSpy->takeFirst().first().toInt(), value - 10);
@@ -207,12 +237,14 @@ private slots:
         auto control = std::make_unique<TimerControl>();
         auto textSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::textChanged);
         auto valueSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::valueChanged);
+        auto durationSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::durationChanged);
         auto runningSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::runningChanged);
         auto finishedSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::timerFinished);
 
         control->setModel(TimerModel{"run"});
         textSpy->clear();
         valueSpy->clear();
+        durationSpy->clear();
 
         // WHEN
         control->setRunning(true);
@@ -222,6 +254,7 @@ private slots:
         // THEN
         QCOMPARE(control->isRunning(), false);
         QCOMPARE(textSpy->size(), 0);
+        QCOMPARE(durationSpy->size(), 0);
         QCOMPARE(valueSpy->size(), 10);
         for (int value = 0; value != 100; value += 10) {
             QCOMPARE(valueSpy->takeFirst().first().toInt(), value + 10);
@@ -238,6 +271,7 @@ private slots:
         auto control = std::make_unique<TimerControl>();
         auto textSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::textChanged);
         auto valueSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::valueChanged);
+        auto durationSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::durationChanged);
         auto runningSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::runningChanged);
         auto finishedSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::timerFinished);
         auto skippedSpy = std::make_unique<QSignalSpy>(control.get(), &TimerControl::timerSkipped);
@@ -245,6 +279,7 @@ private slots:
         control->setModel(TimerModel{"run"});
         textSpy->clear();
         valueSpy->clear();
+        durationSpy->clear();
 
         // WHEN
         control->setRunning(true);
@@ -274,6 +309,14 @@ private slots:
             values << valueSpy->takeFirst().first().toInt();
         qDebug() << values;
         qDebug() << expectedValues;
+        QCOMPARE(values, expectedValues);
+
+        const auto expectedDurations = QVector<int>{100, 0, 100};
+        auto durations = QVector<int>();
+        while (!durationSpy->isEmpty())
+            durations << durationSpy->takeFirst().first().toInt();
+        qDebug() << durations;
+        qDebug() << expectedDurations;
         QCOMPARE(values, expectedValues);
 
         QCOMPARE(finishedSpy->size(), 1);

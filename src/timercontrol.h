@@ -36,6 +36,7 @@ class TimerControl : public QObject
     Q_PROPERTY(TimerModel model READ model WRITE setModel NOTIFY modelChanged)
     Q_PROPERTY(QString text READ text NOTIFY textChanged)
     Q_PROPERTY(int value READ value NOTIFY valueChanged)
+    Q_PROPERTY(int duration READ duration NOTIFY durationChanged)
     Q_PROPERTY(bool running READ isRunning WRITE setRunning NOTIFY runningChanged)
 public:
     explicit TimerControl(QObject *parent = nullptr);
@@ -49,6 +50,7 @@ public:
 
     QString text() const;
     int value() const;
+    int duration() const;
     bool isRunning() const;
 
 public slots:
@@ -58,6 +60,7 @@ signals:
     void modelChanged(const TimerModel &model);
     void textChanged(const QString &text);
     void valueChanged(int value);
+    void durationChanged(int duration);
     void runningChanged(bool running);
 
     void timerFinished();

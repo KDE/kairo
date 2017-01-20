@@ -65,6 +65,7 @@ void TimerControl::setModel(TimerModel &&model)
 
     const auto oldText = text();
     const auto oldValue = value();
+    const auto oldDuration = duration();
     const auto skipped = m_running && m_model.isValid() && oldValue != 0;
 
     m_model = std::move(model);
@@ -84,6 +85,9 @@ void TimerControl::setModel(TimerModel &&model)
 
     if (oldValue != value())
         emit valueChanged(value());
+
+    if (oldDuration != duration())
+        emit durationChanged(duration());
 }
 
 QString TimerControl::text() const
@@ -94,6 +98,11 @@ QString TimerControl::text() const
 int TimerControl::value() const
 {
     return m_value;
+}
+
+int TimerControl::duration() const
+{
+    return m_model.duration();
 }
 
 bool TimerControl::isRunning() const
