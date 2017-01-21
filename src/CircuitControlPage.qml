@@ -34,6 +34,7 @@ Kirigami.Page {
     rightPadding: 0
     bottomPadding: 0
 
+    property SoundControl soundControl
     property alias model: circuitControl.model
     signal circuitFinished()
 
@@ -48,9 +49,7 @@ Kirigami.Page {
     }
 
     TimerNotificationControl {
-        sound: SoundControl {
-            id: sound
-        }
+        sound: root.soundControl
         timer: TimerControl {
             id: timer
             running: false

@@ -45,12 +45,17 @@ Kirigami.ApplicationWindow {
         }
     }
 
+    SoundControl {
+        id: soundControl
+    }
+
     Component {
         id: listComponent
         CircuitListPage {
             onCircuitSelected: {
                 var page = controlComponent.createObject(root)
                 page.model = circuit
+                page.soundControl = soundControl
                 root.pageStack.push(page)
                 page.start()
             }
