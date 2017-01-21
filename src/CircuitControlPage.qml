@@ -29,6 +29,11 @@ Kirigami.Page {
     id: root
 
     title: model.name
+    topPadding: 0
+    leftPadding: 0
+    rightPadding: 0
+    bottomPadding: 0
+
     property alias model: circuitControl.model
     signal circuitFinished()
 
@@ -59,6 +64,12 @@ Kirigami.Page {
             timer.running = false
             root.circuitFinished()
         }
+    }
+
+    Rectangle {
+        height: parent.height
+        width: timer.duration <= 0 ? 0 : parent.width * (timer.duration - timer.value) / timer.duration
+        color: timer.value > 10000 ? "lightSteelBlue" : "crimson"
     }
 
     Text {
