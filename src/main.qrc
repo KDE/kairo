@@ -4,6 +4,7 @@
         <file>CircuitControlPage.qml</file>
         <file>CircuitListPage.qml</file>
         <file>Dependencies.qml</file>
+        <file>endbeep.wav</file>
         <file>longbeep.wav</file>
         <file>shortbeep.wav</file>
     </qresource>

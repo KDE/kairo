@@ -35,6 +35,7 @@ public:
 public slots:
     virtual void playShortBeep() = 0;
     virtual void playLongBeep() = 0;
+    virtual void playEndBeep() = 0;
 };
 
 #endif

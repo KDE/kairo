@@ -47,3 +47,8 @@ void SoundControlStub::playLongBeep()
 {
     m_calls << LongBeep;
 }
+
+void SoundControlStub::playEndBeep()
+{
+    m_calls << EndBeep;
+}

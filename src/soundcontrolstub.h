@@ -34,7 +34,8 @@ class SoundControlStub : public SoundControlInterface
 public:
     enum SoundType {
         ShortBeep,
-        LongBeep
+        LongBeep,
+        EndBeep
     };
 
     explicit SoundControlStub(QObject *parent = nullptr);
@@ -45,6 +46,7 @@ public:
 public slots:
     void playShortBeep() override;
     void playLongBeep() override;
+    void playEndBeep() override;
 
 private:
     QVector<SoundType> m_calls;

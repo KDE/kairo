@@ -42,3 +42,9 @@ void SoundControl::playLongBeep()
     m_player->setMedia(QUrl("qrc:/longbeep.wav"));
     m_player->play();
 }
+
+void SoundControl::playEndBeep()
+{
+    m_player->setMedia(QUrl("qrc:/endbeep.wav"));
+    m_player->play();
+}

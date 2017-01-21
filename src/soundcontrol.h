@@ -37,6 +37,7 @@ public:
 public slots:
     void playShortBeep() override;
     void playLongBeep() override;
+    void playEndBeep() override;
 
 private:
     QMediaPlayer *m_player;
