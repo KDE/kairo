@@ -65,7 +65,10 @@ Kirigami.ApplicationWindow {
     Component {
         id: controlComponent
         CircuitControlPage {
-            onCircuitFinished: root.pageStack.currentIndex = 0
+            onCircuitFinished: {
+                root.pageStack.currentIndex = 0
+                soundControl.playEndBeep()
+            }
         }
     }
 }
