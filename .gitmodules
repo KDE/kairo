@@ -3,4 +3,4 @@
 	url = git://anongit.kde.org/kirigami.git
 [submodule "3rdparty/breeze-icons"]
 	path = 3rdparty/breeze-icons
-	url = kde:breeze-icons
+	url = git://anongit.kde.org/breeze-icons
