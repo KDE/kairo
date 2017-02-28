@@ -36,6 +36,7 @@ Kirigami.ApplicationWindow {
     header: Kirigami.ApplicationHeader {}
 
     pageStack.initialPage: listComponent
+    pageStack.defaultColumnWidth: width
 
     Connections {
         target: pageStack.contentItem
