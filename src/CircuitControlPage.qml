@@ -22,6 +22,7 @@
 */
 
 import QtQuick 2.0
+import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.0 as Kirigami
 import Kairo 1.0
 
@@ -71,12 +72,26 @@ Kirigami.Page {
         color: timer.value > 10000 ? "lightSteelBlue" : "crimson"
     }
 
-    Text {
-        property real seconds: Math.round(timer.value / 100)/10
-        property bool isInt: seconds === Math.round(seconds)
+    ColumnLayout {
+        anchors {
+            left: parent.left
+            right: parent.right
+            verticalCenter: parent.verticalCenter
+        }
+        spacing: Kirigami.Units.gridUnit
+        Kirigami.Heading {
+            Layout.fillWidth: true
+            horizontalAlignment: Text.AlignHCenter
+            font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 4
+            text: timer.text
+            wrapMode: Text.WordWrap
+        }
+        Kirigami.Label {
+            Layout.fillWidth: true
+            horizontalAlignment: Text.AlignHCenter
 
-        anchors.centerIn: parent
-        font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 4
-        text: timer.text + "\n" + seconds + (isInt ? ".0" : "")
+            font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 6
+            text: timer.formattedValue
+        }
     }
 }

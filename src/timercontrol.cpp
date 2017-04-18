@@ -24,6 +24,8 @@
 #include "timercontrol.h"
 
 #include <QTimer>
+#include <QTime>
+#include <QtCore/qmath.h>
 
 TimerControl::TimerControl(QObject *parent)
     : QObject{parent},
@@ -83,8 +85,10 @@ void TimerControl::setModel(TimerModel &&model)
     if (oldText != text())
         emit textChanged(text());
 
-    if (oldValue != value())
+    if (oldValue != value()) {
         emit valueChanged(value());
+        emit formattedValueChanged(formattedValue());
+    }
 
     if (oldDuration != duration())
         emit durationChanged(duration());
@@ -98,6 +102,20 @@ QString TimerControl::text() const
 int TimerControl::value() const
 {
     return m_value;
+}
+
+QString TimerControl::formattedValue() const
+{
+    qreal time = qRound((qreal)m_value / (qreal)100)/(qreal)10;
+    int hours = qFloor(time / 3600);
+    int minutes = qFloor((time - hours * 3600) / 60);
+    //seconds rounded to first decimal position
+    int seconds = qFloor(time - hours * 3600 - minutes * 60);
+
+    return QStringLiteral("%1:%2:%3.%4").arg(hours, 2, 10, QLatin1Char('0'))
+        .arg(minutes, 2, 10, QLatin1Char('0'))
+        .arg(seconds, 2, 10, QLatin1Char('0'))
+        .arg(((time - qFloor(time))*10));
 }
 
 int TimerControl::duration() const
@@ -133,6 +151,7 @@ void TimerControl::onTimerTimeout()
 {
     m_value += m_model.type() == TimerModel::Countdown ? -10 : 10;
     emit valueChanged(m_value);
+    emit formattedValueChanged(formattedValue());
 
     if (m_value == 0) {
         m_timer->stop();
