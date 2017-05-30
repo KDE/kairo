@@ -107,15 +107,14 @@ int TimerControl::value() const
 QString TimerControl::formattedValue() const
 {
     qreal time = qRound((qreal)m_value / (qreal)100)/(qreal)10;
-    int hours = qFloor(time / 3600);
-    int minutes = qFloor((time - hours * 3600) / 60);
+    int minutes = qFloor(time / 60);
     //seconds rounded to first decimal position
-    int seconds = qFloor(time - hours * 3600 - minutes * 60);
+    int seconds = qFloor(time - minutes * 60);
 
-    return QStringLiteral("%1:%2:%3.%4").arg(hours, 2, 10, QLatin1Char('0'))
+    return QStringLiteral("%1:%2.%3")
         .arg(minutes, 2, 10, QLatin1Char('0'))
         .arg(seconds, 2, 10, QLatin1Char('0'))
-        .arg(((time - qFloor(time))*10));
+        .arg(((time - qFloor(time)) * 10));
 }
 
 int TimerControl::duration() const

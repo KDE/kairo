@@ -41,7 +41,7 @@ private slots:
         QCOMPARE(control->model(), TimerModel{});
         QCOMPARE(control->text(), QString());
         QCOMPARE(control->value(), 0);
-        QCOMPARE(control->formattedValue(), QStringLiteral("00:00:00.0"));
+        QCOMPARE(control->formattedValue(), QStringLiteral("00:00.0"));
         QCOMPARE(control->duration(), -1);
         QCOMPARE(control->isRunning(), false);
     }
@@ -54,11 +54,11 @@ private slots:
         QTest::addColumn<QString>("expectedFormattedValue");
         QTest::addColumn<int>("expectedDuration");
 
-        QTest::newRow("invalid") << TimerModel{} << QString() << 0 << QStringLiteral("00:00:00.0") <<-1;
-        QTest::newRow("countdown") << TimerModel{"foo", 10000} << "foo" << 10000 << QStringLiteral("00:00:10.0") << 10000;
-        QTest::newRow("countdown") << TimerModel{"baz", 1050300} << "baz" << 1050300 << QStringLiteral("00:17:30.3") << 1050300;
-        QTest::newRow("countdown") << TimerModel{"baz", 34570900} << "baz" << 34570900 << QStringLiteral("09:36:10.9") << 34570900;
-        QTest::newRow("stopwatch") << TimerModel{"bar"} << "bar" << 0 << QStringLiteral("00:00:00.0") << 0;
+        QTest::newRow("invalid") << TimerModel{} << QString() << 0 << QStringLiteral("00:00.0") <<-1;
+        QTest::newRow("countdown") << TimerModel{"foo", 10000} << "foo" << 10000 << QStringLiteral("00:10.0") << 10000;
+        QTest::newRow("countdown") << TimerModel{"baz", 1050300} << "baz" << 1050300 << QStringLiteral("17:30.3") << 1050300;
+        QTest::newRow("countdown") << TimerModel{"baz", 34570900} << "baz" << 34570900 << QStringLiteral("576:10.9") << 34570900;
+        QTest::newRow("stopwatch") << TimerModel{"bar"} << "bar" << 0 << QStringLiteral("00:00.0") << 0;
     }
 
     void shouldDeriveValuesFromModel()
