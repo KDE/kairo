@@ -24,8 +24,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-#include "kirigamiplugin.h"
-
 #include "circuitcontrol.h"
 #include "circuitlistmodel.h"
 #include "circuitmodel.h"
@@ -38,9 +36,6 @@ int main(int argc, char **argv)
 {
     QGuiApplication app(argc, argv);
     app.setApplicationName("Kairo");
-
-    Q_INIT_RESOURCE(kirigami);
-    KirigamiPlugin::registerTypes();
 
     qmlRegisterType<CircuitListModel>("Kairo", 1, 0, "CircuitListModel");
     qmlRegisterUncreatableType<CircuitModel>("Kairo", 1, 0, "CircuitModel", "Loaded from C++");

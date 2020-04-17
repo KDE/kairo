@@ -13,13 +13,16 @@ find_package(Qt5 REQUIRED Core Quick Multimedia Test)
 include(KDEInstallDirs)
 include(KDECompilerSettings)
 include(KDECMakeSettings)
+include(FeatureSummary)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_definitions(-DKIRIGAMI_BUILD_TYPE_STATIC)
+find_package(KF5Kirigami2 ${REQUIRED_KF5_VERSION} CONFIG QUIET)
+set_package_properties(KF5Kirigami2 PROPERTIES
+    DESCRIPTION "KF5 Kirigami 2 is needed to provide the mobile UI components."
+    TYPE REQUIRED)
 
-add_subdirectory(3rdparty)
 add_subdirectory(src)
 add_subdirectory(tests)
 
