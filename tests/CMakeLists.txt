@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2016 (c) Kevin Ottens <ervin@kde.org>
+
+# SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
