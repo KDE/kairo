@@ -1,0 +1,30 @@
+---
+name:My first circuit
+---
+[
+    {
+        "text": "Simple exercise",
+        "duration": 10000
+    },
+    {
+        "count": 2,
+        "text": "Loop",
+        "content": [
+            {
+                "text": "Simple exercise 1",
+                "duration": 8000
+            },
+            {
+                "text": "Simple exercise 2"
+            },
+            {
+                "text": "Simple exercise 3",
+                "duration": 12000
+            }
+        ]
+    },
+    {
+        "text": "Simple exercise",
+        "duration": 4000
+    }
+]
