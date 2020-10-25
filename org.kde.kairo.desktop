@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=Qt;KDE
+Comment=
+Exec=kairo %U
+GenericName=Sport Coach
+Icon=kairo
+Name=Kairo
+StartupNotify=false
+Terminal=false
+Type=Application

@@ -30,3 +30,12 @@ set_package_properties(KF5Kirigami2 PROPERTIES
 add_subdirectory(src)
 add_subdirectory(tests)
 
+install(
+    PROGRAMS org.kde.kairo.desktop
+    DESTINATION ${XDG_APPS_INSTALL_DIR}
+)
+
+install(
+    FILES org.kde.kairo.appdata.xml
+    DESTINATION ${KDE_INSTALL_METAINFODIR}
+)
