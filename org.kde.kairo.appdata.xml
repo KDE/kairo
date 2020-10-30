@@ -11,17 +11,29 @@
   <name>Kairo</name>
   <name xml:lang="ca">Kairo</name>
   <name xml:lang="es">Kairo</name>
+  <name xml:lang="nl">Kairo</name>
+  <name xml:lang="nn">Kairo</name>
+  <name xml:lang="pt">Kairo</name>
+  <name xml:lang="sv">Kairo</name>
   <name xml:lang="uk">Kairo</name>
   <name xml:lang="x-test">xxKairoxx</name>
   <summary>Sport Training Timer Application</summary>
   <summary xml:lang="ca">Aplicació de temporitzador per a entrenament esportiu</summary>
   <summary xml:lang="es">Aplicación de temporizador para entrenamiento deportivo</summary>
+  <summary xml:lang="nl">Timer-toepassing voor trainen bij sport</summary>
+  <summary xml:lang="nn">Stoppe­klokke for trenings­øvingar</summary>
+  <summary xml:lang="pt">Aplicação de Cronómetro de Exercícios Desportivos</summary>
+  <summary xml:lang="sv">Tidtagningsprogram för sportträning</summary>
   <summary xml:lang="uk">Програма-секундомір для спортивних тренувань</summary>
   <summary xml:lang="x-test">xxSport Training Timer Applicationxx</summary>
   <description>
     <p> An application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you. </p>
     <p xml:lang="ca">Una aplicació que ajuda a fer exercicis esportius d'entrenament (tonificació, estiraments,...) i que usa temporitzadors per ajudar-vos.</p>
     <p xml:lang="es">Una aplicación de ayuda para hacer ejercicios de entrenamiento deportivo (musculación, estiramientos...) mediante el uso de temporizadores.</p>
+    <p xml:lang="nl">Een toepassing om te helpen bij sportoefeningen om te trainen (bodybuilding, stretchen, ...) met behulp van timers om u te helpen.</p>
+    <p xml:lang="nn">Stoppe­klokke som hjelper deg å gjera trenings­øvingar (kroppsbygging, tøying, …).</p>
+    <p xml:lang="pt">Uma aplicação que o ajuda a praticar exercícios desportivos para treinar ('bodybuilding', alongamentos, ...), usando cronómetros para o ajudar.</p>
+    <p xml:lang="sv">Ett program för att hjälpa till med sportövningar för att träna (kroppsbyggnad, stretching, ..) med tidtagning för att hjälpa dig.</p>
     <p xml:lang="uk">Проста програма, яка допоможе вам тренуватися (бодібілдинґ, зарядка тощо) з використанням секундомірів.</p>
     <p xml:lang="x-test">xxAn application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you.xx</p>
   </description>
@@ -34,6 +46,10 @@
       <caption>The Kairo main window.</caption>
       <caption xml:lang="ca">La finestra principal del Kairo.</caption>
       <caption xml:lang="es">La ventana principal de Kairo.</caption>
+      <caption xml:lang="nl">Het hoofdvenster van Kairo.</caption>
+      <caption xml:lang="nn">Hovudvindauget i Kairo.</caption>
+      <caption xml:lang="pt">A janela principal do Kairo.</caption>
+      <caption xml:lang="sv">Huvudfönstret i Kairo.</caption>
       <caption xml:lang="uk">Головне вікно Kairo.</caption>
       <caption xml:lang="x-test">xxThe Kairo main window.xx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_timers_list.png</image>
@@ -42,6 +58,9 @@
       <caption>Kairo Exercise Running.</caption>
       <caption xml:lang="ca">Exercici en curs del Kairo.</caption>
       <caption xml:lang="es">Ejercicio en funcionamiento en Kairo.</caption>
+      <caption xml:lang="nl">Kairo oefening bij rennen.</caption>
+      <caption xml:lang="pt">Exercício de Corrida no Kairo.</caption>
+      <caption xml:lang="sv">Kairo träningslöpning.</caption>
       <caption xml:lang="uk">Kairo під час вправи.</caption>
       <caption xml:lang="x-test">xxKairo Exercise Running.xx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_blue_timer.png</image>
@@ -50,6 +69,9 @@
       <caption>Kairo Free Duration Exercise Running.</caption>
       <caption xml:lang="ca">Exercici de durada lliure en curs del Kairo.</caption>
       <caption xml:lang="es">Ejercicio de duración libre en Kairo.</caption>
+      <caption xml:lang="nl">Kairo oefening vrije duur bij rennen.</caption>
+      <caption xml:lang="pt">Exercício de Corrida de Duração Livre do Kairo.</caption>
+      <caption xml:lang="sv">Kairo träningslöpning utan tidsbegränsning.</caption>
       <caption xml:lang="uk">Kairo під час вправи із довільною тривалістю.</caption>
       <caption xml:lang="x-test">xxKairo Free Duration Exercise Running.xx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_free_timer.png</image>
