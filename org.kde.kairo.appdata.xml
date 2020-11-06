@@ -16,6 +16,7 @@
   <name xml:lang="nl">Kairo</name>
   <name xml:lang="nn">Kairo</name>
   <name xml:lang="pt">Kairo</name>
+  <name xml:lang="sk">Kairo</name>
   <name xml:lang="sl">Kairo</name>
   <name xml:lang="sv">Kairo</name>
   <name xml:lang="uk">Kairo</name>
@@ -28,6 +29,7 @@
   <summary xml:lang="nl">Timer-toepassing voor trainen bij sport</summary>
   <summary xml:lang="nn">Stoppe­klokke for trenings­øvingar</summary>
   <summary xml:lang="pt">Aplicação de Cronómetro de Exercícios Desportivos</summary>
+  <summary xml:lang="sk">Športová aplikácia na meranie času tréningu</summary>
   <summary xml:lang="sl">Uporaba časovnega merilnika za športni trening</summary>
   <summary xml:lang="sv">Tidtagningsprogram för sportträning</summary>
   <summary xml:lang="uk">Програма-секундомір для спортивних тренувань</summary>
@@ -60,6 +62,7 @@
       <caption xml:lang="nl">Het hoofdvenster van Kairo.</caption>
       <caption xml:lang="nn">Hovudvindauget i Kairo.</caption>
       <caption xml:lang="pt">A janela principal do Kairo.</caption>
+      <caption xml:lang="sk">Hlavné okno Kairo</caption>
       <caption xml:lang="sl">Kairo glavno okno.</caption>
       <caption xml:lang="sv">Huvudfönstret i Kairo.</caption>
       <caption xml:lang="uk">Головне вікно Kairo.</caption>
@@ -75,6 +78,7 @@
       <caption xml:lang="nl">Kairo oefening bij rennen.</caption>
       <caption xml:lang="nn">Pågåande Kairo-øving.</caption>
       <caption xml:lang="pt">Exercício de Corrida no Kairo.</caption>
+      <caption xml:lang="sk">Cvičenie Kairo beží</caption>
       <caption xml:lang="sl">Kairo vadba v teku.</caption>
       <caption xml:lang="sv">Kairo träningslöpning.</caption>
       <caption xml:lang="uk">Kairo під час вправи.</caption>
@@ -90,6 +94,7 @@
       <caption xml:lang="nl">Kairo oefening vrije duur bij rennen.</caption>
       <caption xml:lang="nn">Pågåande Kairo-øving utan tidsgrense.</caption>
       <caption xml:lang="pt">Exercício de Corrida de Duração Livre do Kairo.</caption>
+      <caption xml:lang="sk">Cvičenie s voľným časom Kairo beží</caption>
       <caption xml:lang="sl">Kairo prosto trajanje vadbe v teku.</caption>
       <caption xml:lang="sv">Kairo träningslöpning utan tidsbegränsning.</caption>
       <caption xml:lang="uk">Kairo під час вправи із довільною тривалістю.</caption>
