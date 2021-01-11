@@ -63,7 +63,7 @@
   <url type="help">https://docs.kde.org/?application=kairo</url>
   <screenshots>
     <screenshot type="default">
-      <caption>The Kairo main window.</caption>
+      <caption>The Kairo main window</caption>
       <caption xml:lang="ca">La finestra principal del Kairo</caption>
       <caption xml:lang="ca-valencia">La finestra principal del Kairo.</caption>
       <caption xml:lang="en-GB">The Kairo main window.</caption>
@@ -82,7 +82,7 @@
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_timers_list.png</image>
     </screenshot>
     <screenshot>
-      <caption>Kairo Exercise Running.</caption>
+      <caption>Kairo Exercise Running</caption>
       <caption xml:lang="ca">Exercici en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici en curs del Kairo.</caption>
       <caption xml:lang="en-GB">Kairo Exercise Running.</caption>
@@ -101,7 +101,7 @@
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_blue_timer.png</image>
     </screenshot>
     <screenshot>
-      <caption>Kairo Free Duration Exercise Running.</caption>
+      <caption>Kairo Free Duration Exercise Running</caption>
       <caption xml:lang="ca">Exercici de durada lliure en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici de durada lliure en curs del Kairo.</caption>
       <caption xml:lang="en-GB">Kairo Free Duration Exercise Running.</caption>
