@@ -64,14 +64,38 @@
   <screenshots>
     <screenshot type="default">
       <caption>The Kairo main window</caption>
+      <caption xml:lang="ca">Finestra principal del Kairo</caption>
+      <caption xml:lang="es">La ventana principal de Kairo</caption>
+      <caption xml:lang="nl">Het hoofdvenster van Kairo</caption>
+      <caption xml:lang="nn">Hovudvindauget i Kairo</caption>
+      <caption xml:lang="pt">A janela principal do Kairo</caption>
+      <caption xml:lang="sv">Huvudfönstret i Kairo</caption>
+      <caption xml:lang="uk">Головне вікно Kairo</caption>
+      <caption xml:lang="x-test">xxThe Kairo main windowxx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_timers_list.png</image>
     </screenshot>
     <screenshot>
       <caption>Kairo Exercise Running</caption>
+      <caption xml:lang="ca">Exercici en curs del Kairo</caption>
+      <caption xml:lang="es">Ejercicio en funcionamiento en Kairo</caption>
+      <caption xml:lang="nl">Kairo oefening bij rennen</caption>
+      <caption xml:lang="nn">Pågåande Kairo-øving</caption>
+      <caption xml:lang="pt">Exercício de Corrida no Kairo</caption>
+      <caption xml:lang="sv">Kairo träningslöpning</caption>
+      <caption xml:lang="uk">Kairo під час вправи</caption>
+      <caption xml:lang="x-test">xxKairo Exercise Runningxx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_blue_timer.png</image>
     </screenshot>
     <screenshot>
       <caption>Kairo Free Duration Exercise Running</caption>
+      <caption xml:lang="ca">Exercici de durada lliure en curs del Kairo</caption>
+      <caption xml:lang="es">Ejercicio de duración libre en Kairo</caption>
+      <caption xml:lang="nl">Kairo oefening vrije duur bij rennen</caption>
+      <caption xml:lang="nn">Pågåande Kairo-øving utan tidsgrense</caption>
+      <caption xml:lang="pt">Exercício de Corrida de Duração Livre do Kairo</caption>
+      <caption xml:lang="sv">Kairo träningslöpning utan tidsbegränsning</caption>
+      <caption xml:lang="uk">Kairo під час вправи із довільною тривалістю</caption>
+      <caption xml:lang="x-test">xxKairo Free Duration Exercise Runningxx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_free_timer.png</image>
     </screenshot>
   </screenshots>
