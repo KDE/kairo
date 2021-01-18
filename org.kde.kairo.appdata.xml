@@ -15,6 +15,7 @@
   <name xml:lang="es">Kairo</name>
   <name xml:lang="eu">Kairo</name>
   <name xml:lang="fr">Kairo</name>
+  <name xml:lang="id">Kairo</name>
   <name xml:lang="it">Kairo</name>
   <name xml:lang="nl">Kairo</name>
   <name xml:lang="nn">Kairo</name>
@@ -31,6 +32,7 @@
   <summary xml:lang="es">Aplicación de temporizador para entrenamiento deportivo</summary>
   <summary xml:lang="eu">Kirol-entrenamenduetarako tenporizadore aplikazioa</summary>
   <summary xml:lang="fr">Application de chronomètre pour entraînement sportif</summary>
+  <summary xml:lang="id">Aplikasi Timer Latihan Olahraga</summary>
   <summary xml:lang="it">Applicazione timer per allenamento sportivo</summary>
   <summary xml:lang="nl">Timer-toepassing voor trainen bij sport</summary>
   <summary xml:lang="nn">Stoppe­klokke for trenings­øvingar</summary>
@@ -48,6 +50,7 @@
     <p xml:lang="es">Una aplicación de ayuda para hacer ejercicios de entrenamiento deportivo (musculación, estiramientos...) mediante el uso de temporizadores.</p>
     <p xml:lang="eu">Entrenatzeko kirol-ariketak egiten laguntzeko aplikazio bat (kulturismoa, luzatzea, ...) lagunduko dizuten tenporizadoreak erabiltzen dituena.</p>
     <p xml:lang="fr">Une application pour vous accompagner dans des exercises sportifs d'entraînement (musculation, étirements, etc.) en utilisant un chronomètre pour vous aider.</p>
+    <p xml:lang="id">Sebuah aplikasi untuk membantu melakukan latihan olahraga untuk melatih (binaraga, peregangan, ...) menggunakan timer untuk membantumu.</p>
     <p xml:lang="it">Un'applicazione di supporto per esercizi sportivi di allenamento (body building, allungamenti, ...) utilizzando i timer per aiutarti.</p>
     <p xml:lang="nl">Een toepassing om te helpen bij sportoefeningen om te trainen (bodybuilding, stretchen, ...) met behulp van timers om u te helpen.</p>
     <p xml:lang="nn">Stoppe­klokke som hjelper deg å gjera trenings­øvingar (kroppsbygging, tøying, …).</p>
@@ -67,6 +70,7 @@
       <caption xml:lang="ca">Finestra principal del Kairo</caption>
       <caption xml:lang="ca-valencia">Finestra principal del Kairo</caption>
       <caption xml:lang="es">La ventana principal de Kairo</caption>
+      <caption xml:lang="id">Window utama Kairo</caption>
       <caption xml:lang="nl">Het hoofdvenster van Kairo</caption>
       <caption xml:lang="nn">Hovudvindauget i Kairo</caption>
       <caption xml:lang="pt">A janela principal do Kairo</caption>
@@ -81,6 +85,7 @@
       <caption xml:lang="ca">Exercici en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici en curs del Kairo</caption>
       <caption xml:lang="es">Ejercicio en funcionamiento en Kairo</caption>
+      <caption xml:lang="id">Kairo Latihan Lari</caption>
       <caption xml:lang="nl">Kairo oefening bij rennen</caption>
       <caption xml:lang="nn">Pågåande Kairo-øving</caption>
       <caption xml:lang="pt">Exercício de Corrida no Kairo</caption>
@@ -95,6 +100,7 @@
       <caption xml:lang="ca">Exercici de durada lliure en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici de durada lliure en curs del Kairo</caption>
       <caption xml:lang="es">Ejercicio de duración libre en Kairo</caption>
+      <caption xml:lang="id">Kairo Durasi Latihan Lari yang Bebas</caption>
       <caption xml:lang="nl">Kairo oefening vrije duur bij rennen</caption>
       <caption xml:lang="nn">Pågåande Kairo-øving utan tidsgrense</caption>
       <caption xml:lang="pt">Exercício de Corrida de Duração Livre do Kairo</caption>
