@@ -31,6 +31,7 @@
   <summary>Sport Training Timer Application</summary>
   <summary xml:lang="ca">Aplicació de temporitzador per a entrenament esportiu</summary>
   <summary xml:lang="ca-valencia">Aplicació de temporitzador per a entrenament esportiu</summary>
+  <summary xml:lang="de">Anwendung für Sportübungen mit Zeitmessung</summary>
   <summary xml:lang="en-GB">Sport Training Timer Application</summary>
   <summary xml:lang="es">Aplicación de temporizador para entrenamiento deportivo</summary>
   <summary xml:lang="eu">Kirol-entrenamenduetarako tenporizadore aplikazioa</summary>
@@ -49,6 +50,7 @@
     <p> An application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you. </p>
     <p xml:lang="ca">Una aplicació que ajuda a fer exercicis esportius d'entrenament (tonificació, estiraments,...) i que usa temporitzadors per a ajudar-vos.</p>
     <p xml:lang="ca-valencia">Una aplicació que ajuda a fer exercicis esportius d'entrenament (tonificació, estiraments,...) i que usa temporitzadors per a ajudar-vos.</p>
+    <p xml:lang="de">Eine Anwendung zum Trainieren von Sportübungen (Bodybuilding, Stretching, ...) mit Zeitmessung.</p>
     <p xml:lang="en-GB">An application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you.</p>
     <p xml:lang="es">Una aplicación de ayuda para hacer ejercicios de entrenamiento deportivo (musculación, estiramientos...) mediante el uso de temporizadores.</p>
     <p xml:lang="eu">Entrenatzeko kirol-ariketak egiten laguntzeko aplikazio bat (kulturismoa, luzatzea, ...) lagunduko dizuten tenporizadoreak erabiltzen dituena.</p>
@@ -93,6 +95,7 @@
       <caption>Kairo Exercise Running</caption>
       <caption xml:lang="ca">Exercici en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici en curs del Kairo</caption>
+      <caption xml:lang="de">Kairo mit ausgeführter Übung</caption>
       <caption xml:lang="en-GB">Kairo Exercise Running</caption>
       <caption xml:lang="es">Ejercicio en funcionamiento en Kairo</caption>
       <caption xml:lang="eu">Kairo, ariketa martxan</caption>
@@ -112,6 +115,7 @@
       <caption>Kairo Free Duration Exercise Running</caption>
       <caption xml:lang="ca">Exercici de durada lliure en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici de durada lliure en curs del Kairo</caption>
+      <caption xml:lang="de">Kairo-Übung mit beliebiger Dauer</caption>
       <caption xml:lang="en-GB">Kairo Free Duration Exercise Running</caption>
       <caption xml:lang="es">Ejercicio de duración libre en Kairo</caption>
       <caption xml:lang="eu">Kairo, iraupen askeko ariketa martxan.</caption>
