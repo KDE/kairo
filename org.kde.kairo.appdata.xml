@@ -29,6 +29,7 @@
   <name xml:lang="sk">Kairo</name>
   <name xml:lang="sl">Kairo</name>
   <name xml:lang="sv">Kairo</name>
+  <name xml:lang="tr">Kairo</name>
   <name xml:lang="uk">Kairo</name>
   <name xml:lang="x-test">xxKairoxx</name>
   <summary>Sport Training Timer Application</summary>
@@ -51,6 +52,7 @@
   <summary xml:lang="sk">Športová aplikácia na meranie času tréningu</summary>
   <summary xml:lang="sl">Uporaba časovnega merilnika za športni trening</summary>
   <summary xml:lang="sv">Tidtagningsprogram för sportträning</summary>
+  <summary xml:lang="tr">Antrenman Zaman Sayacı</summary>
   <summary xml:lang="uk">Програма-секундомір для спортивних тренувань</summary>
   <summary xml:lang="x-test">xxSport Training Timer Applicationxx</summary>
   <description>
@@ -73,6 +75,7 @@
     <p xml:lang="pt-BR">Um aplicativo para ajudar a fazer exercícios esportivos para treinar (musculação,alongamento, etc) usando temporizadores para ajudá-lo.</p>
     <p xml:lang="sl">Aplikacija za pomoč pri izvajanju športnih vaj za trening (bodybuilding, raztezanje, ...) s pomočjo časovnih merilnikov, ki vam pomagajo.</p>
     <p xml:lang="sv">Ett program för att hjälpa till med sportövningar för att träna (kroppsbyggnad, stretching, ..) med tidtagning för att hjälpa dig.</p>
+    <p xml:lang="tr">Antrenman yaparken (vücut geliştirme, açma-germe, …) zamanı kolayca tutmanıza yardımcı olacak bir uygulama.</p>
     <p xml:lang="uk">Проста програма, яка допоможе вам тренуватися (бодібілдинґ, зарядка тощо) з використанням секундомірів.</p>
     <p xml:lang="x-test">xxAn application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you.xx</p>
   </description>
@@ -84,7 +87,7 @@
     <screenshot type="default">
       <caption>The Kairo main window</caption>
       <caption xml:lang="ca">Finestra principal del Kairo</caption>
-      <caption xml:lang="ca-valencia">Finestra principal del Kairo</caption>
+      <caption xml:lang="ca-valencia">Finestra principal de Kairo</caption>
       <caption xml:lang="de">Das Hauptfenster von Kairo</caption>
       <caption xml:lang="en-GB">The Kairo main window</caption>
       <caption xml:lang="es">La ventana principal de Kairo</caption>
@@ -101,6 +104,7 @@
       <caption xml:lang="pt-BR">A janela principal do Kairo</caption>
       <caption xml:lang="sl">Kairo glavno okno</caption>
       <caption xml:lang="sv">Huvudfönstret i Kairo</caption>
+      <caption xml:lang="tr">Kairo ana penceresi</caption>
       <caption xml:lang="uk">Головне вікно Kairo</caption>
       <caption xml:lang="x-test">xxThe Kairo main windowxx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_timers_list.png</image>
@@ -108,7 +112,7 @@
     <screenshot>
       <caption>Kairo Exercise Running</caption>
       <caption xml:lang="ca">Exercici en curs del Kairo</caption>
-      <caption xml:lang="ca-valencia">Exercici en curs del Kairo</caption>
+      <caption xml:lang="ca-valencia">Exercici en curs de Kairo</caption>
       <caption xml:lang="de">Kairo mit ausgeführter Übung</caption>
       <caption xml:lang="en-GB">Kairo Exercise Running</caption>
       <caption xml:lang="es">Ejercicio en funcionamiento en Kairo</caption>
@@ -125,6 +129,7 @@
       <caption xml:lang="pt-BR">Exercício do Kairo em execução</caption>
       <caption xml:lang="sl">Kairo vadba v teku</caption>
       <caption xml:lang="sv">Kairo träningslöpning</caption>
+      <caption xml:lang="tr">Kairo Antrenman Sırasında</caption>
       <caption xml:lang="uk">Kairo під час вправи</caption>
       <caption xml:lang="x-test">xxKairo Exercise Runningxx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_blue_timer.png</image>
@@ -132,7 +137,7 @@
     <screenshot>
       <caption>Kairo Free Duration Exercise Running</caption>
       <caption xml:lang="ca">Exercici de durada lliure en curs del Kairo</caption>
-      <caption xml:lang="ca-valencia">Exercici de durada lliure en curs del Kairo</caption>
+      <caption xml:lang="ca-valencia">Exercici de duració lliure en curs de Kairo</caption>
       <caption xml:lang="de">Kairo-Übung mit beliebiger Dauer</caption>
       <caption xml:lang="en-GB">Kairo Free Duration Exercise Running</caption>
       <caption xml:lang="es">Ejercicio de duración libre en Kairo</caption>
@@ -149,6 +154,7 @@
       <caption xml:lang="pt-BR">Exercício de duração livre do Kairo em execução</caption>
       <caption xml:lang="sl">Kairo prosto trajanje vadbe v teku</caption>
       <caption xml:lang="sv">Kairo träningslöpning utan tidsbegränsning</caption>
+      <caption xml:lang="tr">Kairo Serbest Süreli Antrenman Sırasında</caption>
       <caption xml:lang="uk">Kairo під час вправи із довільною тривалістю</caption>
       <caption xml:lang="x-test">xxKairo Free Duration Exercise Runningxx</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_free_timer.png</image>
