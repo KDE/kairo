@@ -7,6 +7,7 @@
 */
 
 import QtQuick 2.0
+import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.0 as Kirigami
 import Kairo 1.0
@@ -71,7 +72,7 @@ Kirigami.Page {
             text: timer.text
             wrapMode: Text.WordWrap
         }
-        Kirigami.Label {
+        Controls.Label {
             Layout.fillWidth: true
             horizontalAlignment: Text.AlignHCenter
 
