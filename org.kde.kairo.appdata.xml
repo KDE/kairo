@@ -14,6 +14,7 @@
   <name xml:lang="cs">Kairo</name>
   <name xml:lang="de">Kairo</name>
   <name xml:lang="en-GB">Kairo</name>
+  <name xml:lang="eo">Kairo</name>
   <name xml:lang="es">Kairo</name>
   <name xml:lang="eu">Kairo</name>
   <name xml:lang="fr">Kairo</name>
@@ -40,6 +41,7 @@
   <summary xml:lang="ca-valencia">Aplicació de temporitzador d'entrenament esportiu</summary>
   <summary xml:lang="de">Anwendung für Sportübungen mit Zeitmessung</summary>
   <summary xml:lang="en-GB">Sport Training Timer Application</summary>
+  <summary xml:lang="eo">Tempigila aplikaĵo por Sporttrejnado</summary>
   <summary xml:lang="es">Aplicación de temporizador para entrenamiento deportivo</summary>
   <summary xml:lang="eu">Kirol-entrenamenduetarako tenporizadore aplikazioa</summary>
   <summary xml:lang="fr">Application de chronomètre pour entraînement sportif</summary>
@@ -99,6 +101,7 @@
       <caption xml:lang="ca-valencia">Finestra principal de Kairo</caption>
       <caption xml:lang="de">Das Hauptfenster von Kairo</caption>
       <caption xml:lang="en-GB">The Kairo main window</caption>
+      <caption xml:lang="eo">La ĉefa fenestro de Kairo</caption>
       <caption xml:lang="es">La ventana principal de Kairo</caption>
       <caption xml:lang="eu">Kairo, leiho nagusia</caption>
       <caption xml:lang="fr">La fenêtre principale de Kairo.</caption>
@@ -127,6 +130,7 @@
       <caption xml:lang="ca-valencia">Exercici en curs de Kairo</caption>
       <caption xml:lang="de">Kairo mit ausgeführter Übung</caption>
       <caption xml:lang="en-GB">Kairo Exercise Running</caption>
+      <caption xml:lang="eo">Kairo Ekzerco rulanta</caption>
       <caption xml:lang="es">Ejercicio en funcionamiento en Kairo</caption>
       <caption xml:lang="eu">Kairo, ariketa martxan</caption>
       <caption xml:lang="fr">Lancement d'un exercice avec Kairo.</caption>
@@ -155,6 +159,7 @@
       <caption xml:lang="ca-valencia">Exercici de duració lliure en curs de Kairo</caption>
       <caption xml:lang="de">Kairo-Übung mit beliebiger Dauer</caption>
       <caption xml:lang="en-GB">Kairo Free Duration Exercise Running</caption>
+      <caption xml:lang="eo">Kairo Ekzerco rulanta kun nelimigita daŭro</caption>
       <caption xml:lang="es">Ejercicio de duración libre en Kairo</caption>
       <caption xml:lang="eu">Kairo, iraupen askeko ariketa martxan.</caption>
       <caption xml:lang="fr">Lancement d'un exercice de Kairo avec durée libre.</caption>
