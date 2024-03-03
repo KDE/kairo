@@ -29,6 +29,7 @@
   <name xml:lang="pl">Kairo</name>
   <name xml:lang="pt">Kairo</name>
   <name xml:lang="pt-BR">Kairo</name>
+  <name xml:lang="ro">Kairo</name>
   <name xml:lang="sk">Kairo</name>
   <name xml:lang="sl">Kairo</name>
   <name xml:lang="sv">Kairo</name>
@@ -56,6 +57,7 @@
   <summary xml:lang="pl">Program czasomierza do sportu</summary>
   <summary xml:lang="pt">Aplicação de Cronómetro de Exercícios Desportivos</summary>
   <summary xml:lang="pt-BR">Aplicativo temporizador para treinamento esportivo</summary>
+  <summary xml:lang="ro">Cronometru pentru antrenamente sportive</summary>
   <summary xml:lang="sk">Športová aplikácia na meranie času tréningu</summary>
   <summary xml:lang="sl">Uporaba časovnega merilnika za športni trening</summary>
   <summary xml:lang="sv">Tidtagningsprogram för sportträning</summary>
@@ -84,6 +86,7 @@
     <p xml:lang="pl">Program pomagający wykonywać ćwiczenia (kulturystyczne, rozciągające, ...) przy użyciu czasomierzy.</p>
     <p xml:lang="pt">Uma aplicação que o ajuda a praticar exercícios desportivos para treinar ('bodybuilding', alongamentos, ...), usando cronómetros para o ajudar.</p>
     <p xml:lang="pt-BR">Um aplicativo para ajudar a fazer exercícios esportivos para treinar (musculação,alongamento, etc) usando temporizadores para ajudá-lo.</p>
+    <p xml:lang="ro">Aplicație ce ajută la exersare pentru antrenament (bodybuilding, întinderi, …) folosind cronometre.</p>
     <p xml:lang="sl">Aplikacija za pomoč pri izvajanju športnih vaj za trening (bodybuilding, raztezanje, ...) s pomočjo časovnih merilnikov, ki vam pomagajo.</p>
     <p xml:lang="sv">Ett program för att hjälpa till med sportövningar för att träna (kroppsbyggnad, stretching, ..) med tidtagning för att hjälpa dig.</p>
     <p xml:lang="tr">Antrenman yaparken (vücut geliştirme, açma-germe, …) zamanı kolayca tutmanıza yardımcı olacak bir uygulama.</p>
@@ -117,6 +120,7 @@
       <caption xml:lang="pl">Główne okno Kairo</caption>
       <caption xml:lang="pt">A janela principal do Kairo</caption>
       <caption xml:lang="pt-BR">A janela principal do Kairo</caption>
+      <caption xml:lang="ro">Fereastra principală Kairo</caption>
       <caption xml:lang="sl">Kairo glavno okno</caption>
       <caption xml:lang="sv">Huvudfönstret i Kairo</caption>
       <caption xml:lang="tr">Kairo ana penceresi</caption>
@@ -146,6 +150,7 @@
       <caption xml:lang="pl">W trakcie ćwiczenia Kairo</caption>
       <caption xml:lang="pt">Exercício de Corrida no Kairo</caption>
       <caption xml:lang="pt-BR">Exercício do Kairo em execução</caption>
+      <caption xml:lang="ro">Exercițiu Kairo în desfășurare</caption>
       <caption xml:lang="sl">Kairo vadba v teku</caption>
       <caption xml:lang="sv">Kairo träningslöpning</caption>
       <caption xml:lang="tr">Kairo Antrenman Sırasında</caption>
@@ -175,6 +180,7 @@
       <caption xml:lang="pl">W trakcie ćwiczenia o dowolnym czasie trwania Kairo</caption>
       <caption xml:lang="pt">Exercício de Corrida de Duração Livre do Kairo</caption>
       <caption xml:lang="pt-BR">Exercício de duração livre do Kairo em execução</caption>
+      <caption xml:lang="ro">Exercițiu Kairo cu durată liberă în desfășurare</caption>
       <caption xml:lang="sl">Kairo prosto trajanje vadbe v teku</caption>
       <caption xml:lang="sv">Kairo träningslöpning utan tidsbegränsning</caption>
       <caption xml:lang="tr">Kairo Serbest Süreli Antrenman Sırasında</caption>
