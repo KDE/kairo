@@ -37,6 +37,7 @@
   <name xml:lang="uk">Kairo</name>
   <name xml:lang="x-test">xxKairoxx</name>
   <name xml:lang="zh-CN">Kairo</name>
+  <name xml:lang="zh-TW">Kairo</name>
   <summary>Sport Training Timer Application</summary>
   <summary xml:lang="ca">Aplicació de temporitzador d'entrenament esportiu</summary>
   <summary xml:lang="ca-valencia">Aplicació de temporitzador d'entrenament esportiu</summary>
@@ -65,6 +66,7 @@
   <summary xml:lang="uk">Програма-секундомір для спортивних тренувань</summary>
   <summary xml:lang="x-test">xxSport Training Timer Applicationxx</summary>
   <summary xml:lang="zh-CN">运动训练计时器应用程序</summary>
+  <summary xml:lang="zh-TW">運動訓練計時器應用程式</summary>
   <description>
     <p> An application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you. </p>
     <p xml:lang="ca">Una aplicació que ajuda a fer exercicis esportius d'entrenament (tonificació, estiraments,...) i que usa temporitzadors per a ajudar-vos.</p>
@@ -127,6 +129,7 @@
       <caption xml:lang="uk">Головне вікно Kairo</caption>
       <caption xml:lang="x-test">xxThe Kairo main windowxx</caption>
       <caption xml:lang="zh-CN">Kairo 主窗口</caption>
+      <caption xml:lang="zh-TW">Kairo 主視窗</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_timers_list.png</image>
     </screenshot>
     <screenshot>
@@ -157,6 +160,7 @@
       <caption xml:lang="uk">Kairo під час вправи</caption>
       <caption xml:lang="x-test">xxKairo Exercise Runningxx</caption>
       <caption xml:lang="zh-CN">Kairo 运动练习</caption>
+      <caption xml:lang="zh-TW">Kairo 運動中</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_blue_timer.png</image>
     </screenshot>
     <screenshot>
