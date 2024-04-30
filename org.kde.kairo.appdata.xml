@@ -100,6 +100,7 @@
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=kairo</url>
   <url type="donation">https://www.kde.org/community/donations</url>
   <url type="help">https://docs.kde.org/?application=kairo</url>
+  <url type="vcs-browser">https://invent.kde.org/utilities/kairo</url>
   <screenshots>
     <screenshot type="default">
       <caption>The Kairo main window</caption>
@@ -194,6 +195,12 @@
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_free_timer.png</image>
     </screenshot>
   </screenshots>
+  <categories>
+    <category>Qt</category>
+    <category>KDE</category>
+    <category>Utility</category>
+    <category>Clock</category>
+  </categories>
   <provides>
     <binary>kairo</binary>
   </provides>
