@@ -19,6 +19,7 @@
   <name xml:lang="eu">Kairo</name>
   <name xml:lang="fr">Kairo</name>
   <name xml:lang="gl">Kairo</name>
+  <name xml:lang="he">Kairo</name>
   <name xml:lang="hi">काएरो</name>
   <name xml:lang="id">Kairo</name>
   <name xml:lang="it">Kairo</name>
@@ -48,6 +49,7 @@
   <summary xml:lang="eu">Kirol-entrenamenduetarako tenporizadore aplikazioa</summary>
   <summary xml:lang="fr">Application de chronomètre pour entraînement sportif</summary>
   <summary xml:lang="gl">Aplicación de cronómetro para adestramento deportivo</summary>
+  <summary xml:lang="he">יישום לתזמון אימוני ספורט</summary>
   <summary xml:lang="hi">खेल प्रशिक्षण हेतु टाइमर अनुप्रयोग</summary>
   <summary xml:lang="id">Aplikasi Timer Latihan Olahraga</summary>
   <summary xml:lang="it">Applicazione timer per allenamento sportivo</summary>
@@ -78,6 +80,7 @@
     <p xml:lang="eu">Entrenatzeko kirol-ariketak egiten laguntzeko aplikazio bat (kulturismoa, luzatzea, ...) lagunduko dizuten tenporizadoreak erabiltzen dituena.</p>
     <p xml:lang="fr">Une application pour vous accompagner dans des exercices sportifs d'entraînement (musculation, étirements, etc.) en utilisant un chronomètre pour vous aider.</p>
     <p xml:lang="gl">Unha aplicación para axudar a realizar exercicios deportivos para adestrar (gañar músculo, estirar…) que usa cronómetros para axudarte.</p>
+    <p xml:lang="he">יישום לסיוע באימוני ספורט (בניית גוף, מתיחה ועוד…) בעזרת מתזמנים לעזרה</p>
     <p xml:lang="hi">एक अनुप्रयोग जो टाइमरों के माध्यम से आपको खेल प्रशिक्षण (बॉडीबिल्डिंग, स्ट्रेचिंग, ...) में सहायता करता है।</p>
     <p xml:lang="id">Sebuah aplikasi untuk membantu melakukan latihan olahraga untuk melatih (binaraga, peregangan, ...) menggunakan timer untuk membantumu.</p>
     <p xml:lang="it">Un'applicazione di supporto per esercizi sportivi di allenamento (body building, allungamenti, ...) utilizzando i timer per aiutarti.</p>
@@ -113,6 +116,7 @@
       <caption xml:lang="eu">Kairo, leiho nagusia</caption>
       <caption xml:lang="fr">La fenêtre principale de Kairo.</caption>
       <caption xml:lang="gl">A xanela principal de Kairo</caption>
+      <caption xml:lang="he">החלון הראשי של Kairo</caption>
       <caption xml:lang="hi">काएरो मुख्य विंडो</caption>
       <caption xml:lang="id">Jendela utama Kairo</caption>
       <caption xml:lang="it">La finestra principale di Kairo</caption>
@@ -144,6 +148,7 @@
       <caption xml:lang="eu">Kairo, ariketa martxan</caption>
       <caption xml:lang="fr">Lancement d'un exercice avec Kairo.</caption>
       <caption xml:lang="gl">Execución de exercicio de Kairo</caption>
+      <caption xml:lang="he">אימון ריצה ב־Kairo</caption>
       <caption xml:lang="hi">काएरो दौड़ने का अभ्यास</caption>
       <caption xml:lang="id">Kairo Latihan Lari</caption>
       <caption xml:lang="it">Esercizio di Kairo in esecuzione</caption>
@@ -175,6 +180,7 @@
       <caption xml:lang="eu">Kairo, iraupen askeko ariketa martxan.</caption>
       <caption xml:lang="fr">Lancement d'un exercice de Kairo avec durée libre.</caption>
       <caption xml:lang="gl">Execución de exercicio de duración libre de Kairo</caption>
+      <caption xml:lang="he">תרגיל ריצה לפרק זמן חופשי עם Kairo</caption>
       <caption xml:lang="hi">काएरो फ़्री ड्यूरेशन दौड़ने का अभ्यास</caption>
       <caption xml:lang="id">Kairo Durasi Latihan Lari yang Bebas</caption>
       <caption xml:lang="it">Esercizio di durata libera Kairo in esecuzione</caption>
