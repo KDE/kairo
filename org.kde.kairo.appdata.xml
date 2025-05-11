@@ -9,6 +9,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL</project_license>
   <name>Kairo</name>
+  <name xml:lang="ar">كايرو</name>
   <name xml:lang="ca">Kairo</name>
   <name xml:lang="ca-valencia">Kairo</name>
   <name xml:lang="cs">Kairo</name>
@@ -40,6 +41,7 @@
   <name xml:lang="zh-CN">Kairo</name>
   <name xml:lang="zh-TW">Kairo</name>
   <summary>Sport Training Timer Application</summary>
+  <summary xml:lang="ar">تطبيق مؤقِّت للتدريب الرياضي</summary>
   <summary xml:lang="ca">Aplicació de temporitzador d'entrenament esportiu</summary>
   <summary xml:lang="ca-valencia">Aplicació de temporitzador d'entrenament esportiu</summary>
   <summary xml:lang="de">Anwendung für Sportübungen mit Zeitmessung</summary>
@@ -71,6 +73,7 @@
   <summary xml:lang="zh-TW">運動訓練計時器應用程式</summary>
   <description>
     <p> An application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you. </p>
+    <p xml:lang="ar">تطبيق للمساعدة في القيام بالتمارين الرياضية للتدريب (كمال الأجسام، تمارين الإطالة، ...) باستخدام مؤقتات لمساعدتك.</p>
     <p xml:lang="ca">Una aplicació que ajuda a fer exercicis esportius d'entrenament (tonificació, estiraments,...) i que usa temporitzadors per a ajudar-vos.</p>
     <p xml:lang="ca-valencia">Una aplicació que ajuda a fer exercicis esportius d'entrenament (tonificació, estiraments…) i que utilitza temporitzadors per a ajudar-vos.</p>
     <p xml:lang="de">Eine Anwendung zum Trainieren von Sportübungen (Bodybuilding, Stretching, ...) mit Zeitmessung.</p>
@@ -107,6 +110,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>The Kairo main window</caption>
+      <caption xml:lang="ar">النافذة الرئيسة لكايرو</caption>
       <caption xml:lang="ca">Finestra principal del Kairo</caption>
       <caption xml:lang="ca-valencia">Finestra principal de Kairo</caption>
       <caption xml:lang="de">Das Hauptfenster von Kairo</caption>
@@ -139,6 +143,7 @@
     </screenshot>
     <screenshot>
       <caption>Kairo Exercise Running</caption>
+      <caption xml:lang="ar">رياضة الجري مع كايرو</caption>
       <caption xml:lang="ca">Exercici en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici en curs de Kairo</caption>
       <caption xml:lang="de">Kairo mit ausgeführter Übung</caption>
@@ -171,6 +176,7 @@
     </screenshot>
     <screenshot>
       <caption>Kairo Free Duration Exercise Running</caption>
+      <caption xml:lang="ar">تمرين الجري الحر مع كايرو</caption>
       <caption xml:lang="ca">Exercici de durada lliure en curs del Kairo</caption>
       <caption xml:lang="ca-valencia">Exercici de duració lliure en curs de Kairo</caption>
       <caption xml:lang="de">Kairo-Übung mit beliebiger Dauer</caption>
