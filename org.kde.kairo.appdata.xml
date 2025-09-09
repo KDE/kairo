@@ -38,7 +38,6 @@
   <name xml:lang="sv">Kairo</name>
   <name xml:lang="tr">Kairo</name>
   <name xml:lang="uk">Kairo</name>
-  <name xml:lang="x-test">xxKairoxx</name>
   <name xml:lang="zh-CN">Kairo</name>
   <name xml:lang="zh-TW">Kairo</name>
   <summary>Sport Training Timer Application</summary>
@@ -70,7 +69,6 @@
   <summary xml:lang="sv">Tidtagningsprogram för sportträning</summary>
   <summary xml:lang="tr">Antrenman Zaman Sayacı</summary>
   <summary xml:lang="uk">Програма-секундомір для спортивних тренувань</summary>
-  <summary xml:lang="x-test">xxSport Training Timer Applicationxx</summary>
   <summary xml:lang="zh-CN">运动训练计时器应用程序</summary>
   <summary xml:lang="zh-TW">運動訓練計時器應用程式</summary>
   <description>
@@ -102,7 +100,6 @@
     <p xml:lang="sv">Ett program för att hjälpa till med sportövningar för att träna (kroppsbyggnad, stretching, ..) med tidtagning för att hjälpa dig.</p>
     <p xml:lang="tr">Antrenman yaparken (vücut geliştirme, açma-germe, …) zamanı kolayca tutmanıza yardımcı olacak bir uygulama.</p>
     <p xml:lang="uk">Проста програма, яка допоможе вам тренуватися (бодібілдинґ, зарядка тощо) з використанням секундомірів.</p>
-    <p xml:lang="x-test">xxAn application to help doing sport exercises to train (bodybuilding, stretching, ...) using timers to help you.xx</p>
     <p xml:lang="zh-CN">一个帮助进行体育训练(塑身、拉伸等)的应用程序，使用计时器来帮助你。</p>
   </description>
   <url type="homepage">https://community.kde.org/Kairo</url>
@@ -140,7 +137,6 @@
       <caption xml:lang="sv">Huvudfönstret i Kairo</caption>
       <caption xml:lang="tr">Kairo ana penceresi</caption>
       <caption xml:lang="uk">Головне вікно Kairo</caption>
-      <caption xml:lang="x-test">xxThe Kairo main windowxx</caption>
       <caption xml:lang="zh-CN">Kairo 主窗口</caption>
       <caption xml:lang="zh-TW">Kairo 主視窗</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_timers_list.png</image>
@@ -174,7 +170,6 @@
       <caption xml:lang="sv">Kairo träningslöpning</caption>
       <caption xml:lang="tr">Kairo Antrenman Sırasında</caption>
       <caption xml:lang="uk">Kairo під час вправи</caption>
-      <caption xml:lang="x-test">xxKairo Exercise Runningxx</caption>
       <caption xml:lang="zh-CN">Kairo 运动练习</caption>
       <caption xml:lang="zh-TW">Kairo 運動中</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_blue_timer.png</image>
@@ -208,7 +203,6 @@
       <caption xml:lang="sv">Kairo träningslöpning utan tidsbegränsning</caption>
       <caption xml:lang="tr">Kairo Serbest Süreli Antrenman Sırasında</caption>
       <caption xml:lang="uk">Kairo під час вправи із довільною тривалістю</caption>
-      <caption xml:lang="x-test">xxKairo Free Duration Exercise Runningxx</caption>
       <caption xml:lang="zh-CN">Kairo 自由时间练习</caption>
       <image type="source" width="576" height="554">https://cdn.kde.org/screenshots/kairo/kairo_free_timer.png</image>
     </screenshot>
